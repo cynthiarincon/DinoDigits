@@ -1,0 +1,94 @@
+body {
+  background-image: url(../assets/images/dino-background.png);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #686328;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  font-family: "Momo Trust Display", sans-serif;
+}
+nav img {
+  width: 120px;
+  max-width: 150px;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  list-style: none;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+header {
+  background-color: #53502e;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  padding: 18px 10px;
+}
+header h1 {
+  margin: 0;
+  color: #9ebaa6;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.calc-btn {
+  display: inline-block;
+  background-color: #9ebaa6;
+  padding: 15px 30px;
+  font-size: 2rem;
+  border-radius: 40px;
+  font-family: "Luckiest Guy", cursive;
+  text-align: center;
+}
+.calc-btn a {
+  text-decoration: none;
+  color: #0f3a03;
+}
+.calc-btn:hover a {
+  color: lime;
+}
+
+footer {
+  background-color: #686328;
+  text-align: center;
+  font-family: "Momo Trust Display", sans-serif;
+  padding: 0px 20px;
+}
+footer img {
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto 1px;
+  display: block;
+}
+footer p {
+  margin: 0 0 25px;
+  color: black;
+}/*# sourceMappingURL=index.css.map */
