@@ -1,5 +1,5 @@
 body {
-  background-image: url(../assets/images/dino-background.png);
+  background-image: url(/assets/images/red-dino-background.png);
   margin: 0;
   padding: 0;
   display: flex;
@@ -65,22 +65,15 @@ main {
   padding: 24px;
 }
 
-.calc-btn {
-  display: inline-block;
-  background-color: #9ebaa6;
-  padding: 15px 30px;
-  font-size: 2.5rem;
-  border-radius: 40px;
-  font-family: "Luckiest Guy", cursive;
-  text-align: center;
-  box-shadow: 0px 5px 20px 7px black;
+.dino-track {
+  opacity: 60%;
+  margin: 10px auto 20px;
 }
-.calc-btn a {
-  text-decoration: none;
-  color: #0f3a03;
-}
-.calc-btn:hover a {
-  color: lime;
+
+.calculator {
+  border: 2px solid #9ebaa6;
+  display: grid;
+  grid-template-rows: auto;
 }
 
 footer {
@@ -99,4 +92,4 @@ footer img {
 footer p {
   margin: 0 0 25px;
   color: black;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=calculator.css.map */

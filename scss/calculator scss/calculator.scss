@@ -7,7 +7,7 @@ $color5: #0f3a03;
 
 // BODY
 body {
-  background-image: url(../assets/images/calc-background2.png);
+  background-image: url(/assets/images/red-dino-background.png);
   margin: 0;
   padding: 0;
   display: flex;
@@ -70,15 +70,7 @@ header {
   }
 }
 
-// AUDIO DISPLAY
-audio{
-  display: block;
-  margin: 20px auto 50px;
-  opacity: 20%;
-  max-width: 25%;
-}
-
-// MAIN CONTENT - BUTTON
+// MAIN CONTENT
 main {
   flex: 1; // pushes footer to bottom
   display: flex;
@@ -87,25 +79,19 @@ main {
   padding: 24px;
 }
 
-.calc-btn {
-  display: inline-block;
-  background-color: $color3;
-  padding: 15px 30px;
-  font-size: 2.5rem;
-  border-radius: 40px;
-  font-family: "Luckiest Guy", cursive;
-  text-align: center;
-  box-shadow: 0px 5px 20px 7px black;
-
-  a {
-    text-decoration: none; // removes underline
-    color: $color5;
-  }
-
-  &:hover a {
-    color: lime;
-  }
+//AUDIO
+.dino-track{
+  opacity: 60%;
+  margin: 10px auto 20px;
 }
+
+//CALCULATOR
+.calculator{
+  border:2px solid $color3;
+  display: grid;
+  grid-template-rows: auto;
+}
+
 
 // FOOTER + LOGO IMG
 footer {
