@@ -1,4 +1,22 @@
-// NAVIGATION BAR + LOGO IMG (copied from index.html)
+// MY COLOR VARIABLES
+$color1: #865620;
+$color2: #686328;
+$color3: #9ebaa6;
+$color4: #53502e;
+$color5: #0f3a03;
+
+// BODY
+body {
+  background-image: url(../assets/images/calc-background2.png);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // ensure footer can sit at bottom
+  font-family: sans-serif;
+}
+
+// NAVIGATION BAR + LOGO IMG
 nav {
   background-color: $color2;
   display: flex;
@@ -35,5 +53,77 @@ nav {
     &:hover{
         color: lime;}
     }
+  }
+}
+
+// HEADER
+header {
+  background-color: $color4;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  padding: 18px 10px;
+  opacity: 75%;
+
+  h1 {
+    margin: 0;
+    color: $color3;
+  }
+}
+
+// AUDIO DISPLAY
+audio{
+  display: block;
+  margin: 20px auto 50px;
+  opacity: 20%;
+  max-width: 25%;
+}
+
+// MAIN CONTENT - BUTTON
+main {
+  flex: 1; // pushes footer to bottom
+  display: flex;
+  justify-content: center;
+  align-items: center; // vertical centering
+  padding: 24px;
+}
+
+.calc-btn {
+  display: inline-block;
+  background-color: $color3;
+  padding: 15px 30px;
+  font-size: 2.5rem;
+  border-radius: 40px;
+  font-family: "Luckiest Guy", cursive;
+  text-align: center;
+  box-shadow: 0px 5px 20px 7px black;
+
+  a {
+    text-decoration: none; // removes underline
+    color: $color5;
+  }
+
+  &:hover a {
+    color: lime;
+  }
+}
+
+// FOOTER + LOGO IMG
+footer {
+  background-color: $color2;
+  text-align: center;
+  font-family: "Momo Trust Display", sans-serif;
+  padding: 0px 20px;
+  opacity: 99%;
+
+  img {
+    max-width: 65px;
+    height: auto;
+    margin: 0 auto 1px;
+    display: block;
+  }
+
+  p {
+    margin: 0 0 25px;
+    color: black
   }
 }
