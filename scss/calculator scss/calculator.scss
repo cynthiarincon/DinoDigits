@@ -1,9 +1,12 @@
-// MY COLOR VARIABLES
+// MY VARIABLES
 $color1: #865620;
 $color2: #686328;
 $color3: #9ebaa6;
 $color4: #53502e;
 $color5: #0f3a03;
+$font1: "Luckiest Guy", cursive;
+
+//I copy/pasted my index.scss and added the caluclator and edited the body
 
 // BODY
 body {
@@ -14,6 +17,7 @@ body {
   flex-direction: column;
   min-height: 100vh; // ensure footer can sit at bottom
   font-family: sans-serif;
+  justify-content: center;
 }
 
 // NAVIGATION BAR + LOGO IMG
@@ -60,7 +64,7 @@ nav {
 header {
   background-color: $color4;
   text-align: center;
-  font-family: "Luckiest Guy", cursive;
+  font-family: $font1;
   padding: 18px 10px;
   opacity: 75%;
 
@@ -87,11 +91,45 @@ main {
 
 //CALCULATOR
 .calculator{
-  border:2px solid $color3;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $color5;
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden; //If equation is really long 
+  #display{
+    width: 100%;
+    padding: 20px;
+    font-size: 2.5rem; //affects the display size too
+    text-align: left;
+    border: none;
+    background-color: $color3;
+    color: $color3;
+  }
+.calc-btns{
   display: grid;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(4,1fr); //
+  gap: 10px;
+  padding: 25px;
+button{
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: $color3;
+  color: rgb(59, 0, 0);
+  font-size: 3rem;
+  font-family: $font1;
+  cursor: pointer;
+&:hover{
+  background-color: $color2;
+  color: white;
+  &:active{
+  background-color: $color5;
+  color: rgb(204, 255, 0);
 }
-
+}
+}
+}
+}
 
 // FOOTER + LOGO IMG
 footer {
