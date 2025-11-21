@@ -14,14 +14,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px;
+  padding: 0px 10px;
   font-family: "Momo Trust Display", sans-serif;
   font-weight: bolder;
   opacity: 99%;
 }
 nav img {
-  width: 130px;
-  max-width: 150px;
+  width: 80px;
   height: auto;
   margin: 0;
   display: block;
@@ -29,18 +28,17 @@ nav img {
 nav ul {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 12px;
   margin: 0;
   padding: 0;
   align-items: center;
   list-style: none;
 }
 nav ul li a {
-  list-style: none;
   margin: 0;
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 nav ul li a:hover {
   color: lime;
@@ -50,12 +48,13 @@ header {
   background-color: #53502e;
   text-align: center;
   font-family: "Luckiest Guy", cursive;
-  padding: 18px 10px;
+  padding: 12px 10px;
   opacity: 75%;
 }
 header h1 {
   margin: 0;
   color: #9ebaa6;
+  font-size: 1.2rem;
 }
 
 main {
@@ -63,7 +62,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 15px;
 }
 
 .dino-track {
@@ -75,13 +74,13 @@ main {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #0f3a03;
   border-radius: 15px;
-  max-width: 500px;
+  max-width: 280px;
   overflow: hidden;
 }
 .calculator #display {
   width: 100%;
-  padding: 20px;
-  font-size: 2.5rem;
+  padding: 12px;
+  font-size: 1.5rem;
   text-align: left;
   border: none;
   background-color: #9ebaa6;
@@ -90,16 +89,16 @@ main {
 .calculator .calc-btns {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  padding: 25px;
+  gap: 6px;
+  padding: 12px;
 }
 .calculator .calc-btns button {
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
   background-color: #9ebaa6;
   color: rgb(59, 0, 0);
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-family: "Luckiest Guy", cursive;
   cursor: pointer;
 }
@@ -119,16 +118,113 @@ footer {
   background-color: #686328;
   text-align: center;
   font-family: "Momo Trust Display", sans-serif;
-  padding: 0px 20px;
+  padding: 0px 15px;
   opacity: 99%;
 }
 footer img {
-  max-width: 65px;
+  max-width: 50px;
   height: auto;
   margin: 0 auto 1px;
   display: block;
 }
 footer p {
-  margin: 0 0 25px;
+  margin: 0 0 20px;
   color: black;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 0px 15px;
+  }
+  nav img {
+    width: 100px;
+  }
+  nav ul {
+    gap: 18px;
+  }
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+  header {
+    padding: 15px 10px;
+  }
+  header h1 {
+    font-size: 1.6rem;
+  }
+  main {
+    padding: 20px;
+  }
+  .calculator {
+    max-width: 380px;
+  }
+  .calculator #display {
+    padding: 16px;
+    font-size: 2rem;
+  }
+  .calculator .calc-btns {
+    gap: 8px;
+    padding: 18px;
+  }
+  .calculator .calc-btns button {
+    width: 75px;
+    height: 75px;
+    font-size: 2.2rem;
+  }
+  footer img {
+    max-width: 60px;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1024px) {
+  nav {
+    padding: 0px 20px;
+  }
+  nav img {
+    width: 130px;
+  }
+  nav ul {
+    gap: 24px;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+  header {
+    padding: 18px 10px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  main {
+    padding: 24px;
+  }
+  .calculator {
+    max-width: 500px;
+  }
+  .calculator #display {
+    padding: 20px;
+    font-size: 2.5rem;
+  }
+  .calculator .calc-btns {
+    gap: 10px;
+    padding: 25px;
+  }
+  .calculator .calc-btns button {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    border-radius: 20px;
+  }
+  footer {
+    padding: 0px 20px;
+  }
+  footer img {
+    max-width: 65px;
+  }
+  footer p {
+    margin: 0 0 25px;
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=calculator.css.map */
