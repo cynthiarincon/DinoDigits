@@ -113,6 +113,9 @@ main {
 .calculator .calc-btns button.operator-btn {
   background-color: rgb(92, 177, 98);
 }
+.calculator .calc-btns button.operator-btn.operator-btn:active {
+  background-color: #865620;
+}
 
 footer {
   background-color: #686328;

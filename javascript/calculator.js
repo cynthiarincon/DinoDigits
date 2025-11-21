@@ -14,8 +14,6 @@ console.log("cynthias calculator!"); //test
 
 // Clear display and reset calculator.
 
-console.log("Cynthia's calculator!");
-
 const display = document.getElementById("display");
 
 function appendToDisplay(input) {
