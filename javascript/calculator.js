@@ -14,6 +14,8 @@ console.log("cynthias calculator!"); //test
 
 // Clear display and reset calculator.
 
+console.log("Cynthia's calculator!");
+
 const display = document.getElementById("display");
 
 function appendToDisplay(input) {
@@ -26,8 +28,33 @@ function clearDisplay() {
 
 function calculate() {
     try {
+        // Check for division by zero
+        if (display.value.includes("/0")) {
+            display.value = "Cannot divide by zero";
+            return;
+        }
         display.value = eval(display.value);
     } catch (error) {
         display.value = "Error";
     }
 }
+
+// Keyboard support
+document.addEventListener("keydown", function(event) {
+    const key = event.key;
+
+    // Numbers and operators
+    if ("0123456789+-*/.".includes(key)) {
+        appendToDisplay(key);
+    }
+
+    // Enter key = calculate
+    if (key === "Enter") {
+        calculate();
+    }
+
+    // Backspace or Escape = clear
+    if (key === "Backspace" || key === "Escape") {
+        clearDisplay();
+    }
+});
