@@ -85,7 +85,7 @@ main {
   text-align: left;
   border: none;
   background-color: #9ebaa6;
-  color: #9ebaa6;
+  color: #0f3a03;
 }
 .calculator .calc-btns {
   display: grid;
@@ -107,9 +107,12 @@ main {
   background-color: #686328;
   color: white;
 }
-.calculator .calc-btns button:hover:active {
+.calculator .calc-btns button:active {
   background-color: #0f3a03;
-  color: rgb(204, 255, 0);
+  color: rgb(152, 164, 102);
+}
+.calculator .calc-btns button.operator-btn {
+  background-color: rgb(92, 177, 98);
 }
 
 footer {

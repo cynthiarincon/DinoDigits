@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="scss/calculator scss/calculator.css" rel="stylesheet">
+    <link href="scss/calculator-scss/calculator.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
-    <title>Calculator</title>
+    <title>🦕 DinoDigits</title>
 </head>
 <body>
 
@@ -26,7 +26,7 @@
 <main>
 
        <div class="calculator">
-        <input id="display" readonly>
+        <input id="display" type="text" readonly>
 
         <div class="calc-btns">
             <button onclick="appendToDisplay('0')">0</button> <!--onclick is an attribute-->
@@ -40,12 +40,12 @@
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
             <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('*')">*</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="calculate()">=</button>
-            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+            <button onclick="calculate()" class="operator-btn">=</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
         </div>
 
         </div>
@@ -54,7 +54,7 @@
 
 </main>
 
-<script src="calculator.js"></script>
+<script src="javascript/calculator.js"></script>
 
     <footer>
         <img src="assets/images/dinodigits-transparent.png" alt="DinoDigits logo">
