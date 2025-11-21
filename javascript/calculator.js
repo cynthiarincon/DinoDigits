@@ -2,17 +2,17 @@
 console.log("cynthias calculator!"); //test
 
 
-//I need a calculator that works by clicking buttons in order to display on the screen and create something that displays results, then be able to clear and do it all over again.
+// Create a calculator that responds to button clicks, displays input on screen, calculates results, and can be cleared to start over.
 
-//declasre what each number is and what each operator does (+ adds, - subtracts, C clears display, = shows results, * multiplies etc....
+// Declare what each number is and what each operator does (+ adds, - subtracts, C clears display, = shows results, * multiplies, / divides).
 
-//when button is clicked, the number/operator is shown on the display (only numbers first)
+// When a button is clicked, the number/operator is shown on the display.
 
-//Have every possibility of what can be resulted
+// Handle all possible calculation outcomes.
 
-//error when you do 10/0 and whatever else... big number?
+// Show error for invalid operations (like dividing by zero or overflow).
 
-//clear and reset
+// Clear display and reset calculator.
 
 const display = document.getElementById("display");
 
