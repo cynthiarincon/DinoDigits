@@ -120,30 +120,22 @@ footer {
   }
 }
 
-// ===================
 // TABLET - 768px and up
-// ===================
-@media (min-width: 768px) {
+@media screen and (min-width: 768px){
   nav {
     padding: 0px 15px;
-
-    img {
-      width: 100px;
-    }
-
-    ul {
-      gap: 18px;
-
-      li a {
-        font-size: 1.2rem;
-      }
-    }
+  img {
+     width: 100px;
   }
+  ul {
+    gap: 18px; 
+  li a {
+    font-size: 1.2rem;
+  }}}
 
   header h1 {
     font-size: 1.6rem;
   }
-
   .calc-btn {
     padding: 12px 25px;
     font-size: 2rem;
@@ -152,50 +144,38 @@ footer {
 
   footer {
     padding: 0px 15px;
-
-    img {
-      max-width: 58px;
+  img {
+    max-width: 58px;
     }
+  p {
+    font-size: 0.9rem;
+}}}
 
-    p {
-      font-size: 0.9rem;
-    }
-  }
-}
 
-// ===================
 // DESKTOP - 1024px and up
-// ===================
 @media (min-width: 1024px) {
   nav {
     padding: 0px 20px;
 
-    img {
+  img {
       width: 130px;
       max-width: 150px;
     }
-
-    ul {
+  ul {
       gap: 24px;
-
-      li a {
+  li a {
         font-size: 1.5rem;
-      }
-    }
-  }
+}}}
 
   header {
     padding: 18px 10px;
-
-    h1 {
+  h1 {
       font-size: 2rem;
-    }
-  }
+}}
 
   main {
     padding: 24px;
   }
-
   .calc-btn {
     padding: 15px 30px;
     font-size: 2.5rem;
@@ -205,14 +185,10 @@ footer {
 
   footer {
     padding: 0px 20px;
-
-    img {
+  img {
       max-width: 65px;
     }
-
-    p {
+  p {
       margin: 0 0 25px;
       font-size: 1rem;
-    }
-  }
-}
+}}}
